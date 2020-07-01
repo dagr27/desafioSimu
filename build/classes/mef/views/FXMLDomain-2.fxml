@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="dPane" onMouseClicked="#activate" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #0A0C0F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.FXMLDomain2Controller">
+   <children>
+      <ImageView fitHeight="123.0" fitWidth="693.0" layoutX="14.0" layoutY="381.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/boxDialog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="42.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Sultano.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblBox1" layoutX="42.0" layoutY="395.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Hola soy Sultano, ¿Como estas?">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBox2" layoutX="42.0" layoutY="424.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Para mi es un gusto ayudarte, ahorita crearemos el dominio">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBox3" layoutX="39.0" layoutY="451.0" styleClass="text" stylesheets="@../../fonts/font.css" text="¿Te gustaria saber que figura escogeremos? (Haz click en la pantalla para descubrirlo)">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgDomain" onMouseClicked="#showMesh"  fitHeight="218.0" fitWidth="405.0" layoutX="273.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../img/domain/Domain.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDesc" layoutX="421.0" layoutY="302.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Cubo de 7x7" textFill="WHITE" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

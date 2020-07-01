@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #0A0C0F;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="mef.controller.FXMLTConectividadesController">
+   <children>
+      <ImageView fitHeight="236.0" fitWidth="462.0" layoutX="129.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/table/tablaConectividad.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="11.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Sultano.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="534.0" layoutX="173.0" layoutY="352.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/boxDialog.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="193.0" layoutY="361.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Excelente, a esto se le llama tabla de conectividades">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="391.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Esta tabla te servira para el ensamblado mas adelante">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="416.0" styleClass="text" stylesheets="@../../fonts/font.css" text="te aconsejo no modificar ningun numero para que podamos">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="443.0" styleClass="text" stylesheets="@../../fonts/font.css" text="trabajar juntos y obtener la misma respuesta :D">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

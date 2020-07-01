@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="principal" fx:id="principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.FXMLMainController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="home" onMouseClicked="#goToModel" prefHeight="512.0" prefWidth="720.0" styleClass="back" stylesheets="@../../img/back.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="273.0" layoutY="297.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Shadow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="700.0" layoutX="10.0" layoutY="357.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../img/boxDialog.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="300.0" fitWidth="160.0" layoutX="280.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/profe.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblText" layoutX="51.0" layoutY="386.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Bienvenido a tu plataforma &quot;processi&quot;  para calcular el MEF en 3D.">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblText1" layoutX="50.0" layoutY="415.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Mi nombre es Profe Juan yo ire contigo en todo este proceso de aprendizaje ">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblText11" layoutX="50.0" layoutY="443.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Para continuar haz click en la pantalla de fondo.">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="modelPane" fx:id="modelPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="720.0" styleClass="back" stylesheets="@../../img/back.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.FXMLModelController">
+   <children>
+      <Label layoutX="374.0" layoutY="300.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Siguiente" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="480.0" layoutX="14.0" layoutY="348.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/boxDialog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="307.0" fitWidth="169.0" layoutX="523.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/profe.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="366.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Esas ecuaciones que se ven arriba son">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="396.0" styleClass="text" stylesheets="@../../fonts/font.css" text="el modelo a utilizar, interesante no?">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="424.0" styleClass="text" stylesheets="@../../fonts/font.css" text="ah pero hay una sorpresa...">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="450.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Para avanzar haz click en Siguiente">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnNext" fitHeight="53.0" fitWidth="149.0" layoutX="341.0" layoutY="292.0" onMouseClicked="#goToDomain" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/btn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eq1" fitHeight="26.0" fitWidth="284.0" layoutX="94.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/model/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eq2" fitHeight="31.0" fitWidth="272.0" layoutX="115.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/model/2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

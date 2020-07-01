@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Pokemon Fire Red';
+    src: url('pokemon_fire_red.ttf');
+}
+
+.text {
+    -fx-font-family: "Pokemon Fire Red";
+}
