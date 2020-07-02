@@ -17,6 +17,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
 
@@ -30,27 +32,34 @@ public class FXMLTConectividadesController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    @FXML
+    ImageView btnNext;
+    
+    @FXML
+    AnchorPane tPane;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
     
-    /*@FXML private void goToDomain(javafx.scene.input.MouseEvent e) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/FXMLDomain-2.fxml"));
-        Scene scene = sultano.getScene();
+    @FXML private void goToSteps(javafx.scene.input.MouseEvent e) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/steps.fxml"));
+        Scene scene = btnNext.getScene();
         
-        root.translateYProperty().set(scene.getWidth());
+        root.translateXProperty().set(scene.getWidth());
         StackPane parentContainer = (StackPane) scene.getRoot();
         parentContainer.getChildren().add(root);
         
         Timeline timeline = new Timeline();
-        KeyValue kv = new KeyValue(root.translateYProperty(),0,Interpolator.EASE_IN);
+        KeyValue kv = new KeyValue(root.translateXProperty(),0,Interpolator.EASE_IN);
         KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
         timeline.getKeyFrames().add(kf);
         timeline.setOnFinished((event) -> {
-            parentContainer.getChildren().remove(AnchorPane);
+            parentContainer.getChildren().remove(tPane);
         });
         timeline.play();
-    }*/
+    }
     
 }

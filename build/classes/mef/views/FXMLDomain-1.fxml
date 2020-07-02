@@ -6,44 +6,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" onMouseClicked="#activate" prefHeight="512.0" prefWidth="720.0" styleClass="back2" stylesheets="@../../img/back.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.FXMLDomain1Controller">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" onMouseClicked="#activate" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #00588b;" stylesheets="@../../img/back.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.FXMLDomain1Controller">
    <children>
-      <ImageView id="fulano" fx:id="fulano" fitHeight="150.0" fitWidth="200.0" layoutX="232.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView id="fulano" fx:id="fulano" fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@../../img/Fulano.gif" />
          </image>
       </ImageView>
-      <ImageView id="sultano"  onMouseClicked="#goToDomain"  fx:id="sultano" fitHeight="150.0" fitWidth="200.0" layoutX="488.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView id="sultano" fx:id="sultano" fitHeight="150.0" fitWidth="200.0" layoutX="488.0" layoutY="209.0" onMouseClicked="#goToDomain" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@../../img/Sultano.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="139.0" fitWidth="516.0" layoutX="193.0" layoutY="359.0" pickOnBounds="true">
+      <ImageView fitHeight="139.0" fitWidth="698.0" layoutX="11.0" layoutY="359.0" pickOnBounds="true">
          <image>
             <Image url="@../../img/boxDialog.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="266.0" fitWidth="163.0" layoutX="27.0" layoutY="226.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/profe.gif" />
-         </image>
-      </ImageView>
-      <Label layoutX="217.0" layoutY="375.0" styleClass="text" stylesheets="@../../fonts/font.css" text="¡Ahora construiremos el dominio!">
+      <Label layoutX="33.0" layoutY="375.0" styleClass="text" stylesheets="@../../fonts/font.css" text="¡Ahora construiremos el dominio!">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="223.0" layoutY="406.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Pero aqui viene la sorpresa">
+      <Label layoutX="33.0" layoutY="406.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Pero aqui viene la sorpresa">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lblDesc" layoutX="223.0" layoutY="431.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Haz click en la pantalla azul para descubrirla...">
+      <Label fx:id="lblDesc" layoutX="33.0" layoutY="431.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Haz click en la pantalla azul para descubrirla...">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lblFulano" layoutX="248.0" layoutY="174.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Hola Soy Fulano" textFill="WHITE" visible="false">
+      <Label fx:id="lblFulano" layoutX="89.0" layoutY="174.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Hola Soy Fulano" textFill="WHITE" visible="false">
          <font>
             <Font size="25.0" />
          </font>
@@ -53,7 +48,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lblDesc1" layoutX="223.0" layoutY="456.0" styleClass="text" stylesheets="@../../fonts/font.css">
+      <Label fx:id="lblDesc1" layoutX="33.0" layoutY="456.0" styleClass="text" stylesheets="@../../fonts/font.css">
          <font>
             <Font size="25.0" />
          </font>
