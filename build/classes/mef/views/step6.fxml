@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="sPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.Step6Controller">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="486.0" layoutX="117.0" layoutY="368.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/btn-white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="121.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Fulano.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="btnNext" fx:id="btnNext" fitHeight="63.0" fitWidth="62.0" layoutX="624.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/right-arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="315.0" layoutY="33.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Paso 6" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="402.0" styleClass="text" stylesheets="@../../fonts/font.css" text="En el paso 6, vemos las funciones a integrar" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="425.0" styleClass="text" stylesheets="@../../fonts/font.css" text="por el metodo de la vaca (Integracion por partes) para " textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="450.0" styleClass="text" stylesheets="@../../fonts/font.css" text="luego concluir que esas matrices soniguales a la -K y -J" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="235.0" fitWidth="344.0" layoutX="17.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/steps/6-1.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="344.0" layoutX="364.0" layoutY="100.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/steps/6-2.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

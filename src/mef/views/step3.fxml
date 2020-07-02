@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="sPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.Step2Controller">
+<AnchorPane id="AnchorPane" fx:id="sPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.Step3Controller">
    <children>
       <ImageView fitHeight="139.0" fitWidth="486.0" layoutX="117.0" layoutY="368.0" pickOnBounds="true">
          <image>
@@ -15,7 +15,7 @@
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="569.0" layoutX="79.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../img/steps/2.PNG" />
+            <Image url="@../../img/steps/3.PNG" />
          </image>
       </ImageView>
       <ImageView fitHeight="121.0" fitWidth="121.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
@@ -28,22 +28,22 @@
             <Image url="@../../img/right-arrow.png" />
          </image>
       </ImageView>
-      <Label layoutX="315.0" layoutY="33.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Paso 2" textFill="WHITE">
+      <Label layoutX="315.0" layoutY="33.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Paso 3" textFill="WHITE">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <Label layoutX="161.0" layoutY="402.0" styleClass="text" stylesheets="@../../fonts/font.css" text="En el paso 2, tenemos la temperatura en funcion" textFill="WHITE">
+      <Label layoutX="161.0" layoutY="402.0" styleClass="text" stylesheets="@../../fonts/font.css" text="En el paso 3, sustituimos las constantes " textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="161.0" layoutY="425.0" styleClass="text" stylesheets="@../../fonts/font.css" text="de las funciones de forma y las temperaturas locales" textFill="WHITE">
+      <Label layoutX="161.0" layoutY="425.0" styleClass="text" stylesheets="@../../fonts/font.css" text="de las funciones que obtuvimos en el paso anterior" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="161.0" layoutY="450.0" styleClass="text" stylesheets="@../../fonts/font.css" text="luego sustituimos las constantes del modelo A y B" textFill="WHITE">
+      <Label layoutX="161.0" layoutY="450.0" styleClass="text" stylesheets="@../../fonts/font.css" text="luego despejamos el residual en cada una de ellas" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>

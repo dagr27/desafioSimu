@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="sPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.Step5Controller">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="486.0" layoutX="117.0" layoutY="368.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/btn-white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="318.0" fitWidth="443.0" layoutX="142.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/steps/5.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="121.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Fulano.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="btnNext" fx:id="btnNext" onMouseClicked="#goToNext"  fitHeight="63.0" fitWidth="62.0" layoutX="624.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/right-arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="163.0" rotate="-90.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Paso 5" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="402.0" styleClass="text" stylesheets="@../../fonts/font.css" text="El paso 5 es bastante denso, trabajamos las integrales" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="425.0" styleClass="text" stylesheets="@../../fonts/font.css" text="a modo de simplificarlas y llegar a la forma fuerte " textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="450.0" styleClass="text" stylesheets="@../../fonts/font.css" text="de las funciones" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="172.0" fitWidth="436.0" layoutX="146.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/steps/5-1.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="353.0" layoutY="163.0" styleClass="text" stylesheets="@../../fonts/font.css" text=". . . " textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

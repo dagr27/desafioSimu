@@ -27,24 +27,22 @@ import javafx.util.Duration;
  *
  * @author danie
  */
-public class Step2Controller implements Initializable {
+public class Step3Controller implements Initializable {
 
     /**
      * Initializes the controller class.
      */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
     @FXML
     ImageView btnNext;
     
     @FXML
-    AnchorPane sPane;  
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
-      
+    AnchorPane sPane;    
     @FXML private void goToNext(javafx.scene.input.MouseEvent e) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/step3.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/step4.fxml"));
         Scene scene = btnNext.getScene();
         
         root.translateXProperty().set(scene.getWidth());
