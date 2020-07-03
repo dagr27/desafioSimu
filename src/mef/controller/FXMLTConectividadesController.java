@@ -20,6 +20,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.AudioClip;
 import javafx.util.Duration;
 
 /**
@@ -47,6 +48,9 @@ public class FXMLTConectividadesController implements Initializable {
     @FXML private void goToSteps(javafx.scene.input.MouseEvent e) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("/mef/views/steps.fxml"));
         Scene scene = btnNext.getScene();
+        
+        AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
+        sound.play();
         
         root.translateXProperty().set(scene.getWidth());
         StackPane parentContainer = (StackPane) scene.getRoot();

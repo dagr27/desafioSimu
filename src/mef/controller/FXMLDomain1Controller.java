@@ -21,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.AudioClip;
 import javafx.util.Duration;
 
 /**
@@ -62,9 +63,13 @@ public class FXMLDomain1Controller implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("/mef/views/FXMLDomain-2.fxml"));
         Scene scene = sultano.getScene();
         
+        AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
+        sound.play();
+        
         root.translateYProperty().set(scene.getWidth());
         StackPane parentContainer = (StackPane) scene.getRoot();
         parentContainer.getChildren().add(root);
+        
         
         Timeline timeline = new Timeline();
         KeyValue kv = new KeyValue(root.translateYProperty(),0,Interpolator.EASE_IN);
@@ -77,6 +82,9 @@ public class FXMLDomain1Controller implements Initializable {
     }
     
     @FXML private void activate(javafx.scene.input.MouseEvent e) throws IOException{
+        AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
+        sound.play();
+        
         fulano.setVisible(true);
         sultano.setVisible(true);
         lblFulano.setVisible(true);

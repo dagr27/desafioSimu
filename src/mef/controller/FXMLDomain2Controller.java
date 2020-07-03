@@ -22,6 +22,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.AudioClip;
 import javafx.util.Duration;
 
 /**
@@ -57,6 +58,8 @@ public class FXMLDomain2Controller implements Initializable {
 
     @FXML
     private void activate(javafx.scene.input.MouseEvent e) throws IOException {
+        AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
+        sound.play();
         imgDomain.setVisible(true);
         lblDesc.setVisible(true);
         lblBox1.setText("Este sera el dominio que trabajaremos, genial/elegante/fresco no?");
@@ -75,6 +78,9 @@ public class FXMLDomain2Controller implements Initializable {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/mef/views/FXMLTConectividades.fxml"));
                 Scene scene = imgDomain.getScene();
+                
+                AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
+                sound.play();
                 root.translateYProperty().set(scene.getWidth());
                 StackPane parentContainer = (StackPane) scene.getRoot();
                 parentContainer.getChildren().add(root);

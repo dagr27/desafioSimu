@@ -5,12 +5,16 @@
  */
 package mef;
 
+import java.io.File;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.media.AudioClip;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -29,6 +33,10 @@ public class Mef extends Application {
         
         Scene scene = new Scene(root);
         stage.setScene(scene);
+
+        //AudioClip sound = new AudioClip(this.getClass().getResource("/mef/nature.mp3").toExternalForm());
+        //sound.play();
+     
         stage.show();
         
         //Fade Transition

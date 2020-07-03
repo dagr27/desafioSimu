@@ -25,6 +25,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.AudioClip;
 import javafx.scene.text.Font;
 import javafx.util.Duration;
 
@@ -61,6 +62,9 @@ public class FXMLMainController implements Initializable {
         
         root.translateYProperty().set(scene.getHeight());
         principal.getChildren().add(root);
+        
+        AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
+        sound.play();
         
         Timeline timeline = new Timeline();
         KeyValue kv = new KeyValue(root.translateYProperty(),0,Interpolator.EASE_IN);
