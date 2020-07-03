@@ -28,7 +28,7 @@ import javafx.util.Duration;
  *
  * @author danie
  */
-public class Step6Controller implements Initializable {
+public class InitAssemblyController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -36,25 +36,25 @@ public class Step6Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }  
+    }    
     @FXML
     ImageView btnNext;
     
     @FXML
     AnchorPane sPane;    
     @FXML private void goToNext(javafx.scene.input.MouseEvent e) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/initComp.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/assembly.fxml"));
         Scene scene = btnNext.getScene();
         
         AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
         sound.play();
         
-        root.translateXProperty().set(scene.getWidth());
+        root.translateYProperty().set(scene.getWidth());
         StackPane parentContainer = (StackPane) scene.getRoot();
         parentContainer.getChildren().add(root);
         
         Timeline timeline = new Timeline();
-        KeyValue kv = new KeyValue(root.translateXProperty(),0,Interpolator.EASE_IN);
+        KeyValue kv = new KeyValue(root.translateYProperty(),0,Interpolator.EASE_IN);
         KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
         timeline.getKeyFrames().add(kf);
         timeline.setOnFinished((event) -> {

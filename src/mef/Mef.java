@@ -34,8 +34,8 @@ public class Mef extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
 
-        //AudioClip sound = new AudioClip(this.getClass().getResource("/mef/nature.mp3").toExternalForm());
-        //sound.play();
+        AudioClip sound = new AudioClip(this.getClass().getResource("/mef/nature.mp3").toExternalForm());
+        sound.play();
      
         stage.show();
         

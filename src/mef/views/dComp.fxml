@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="sPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.DCompController">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="486.0" layoutX="117.0" layoutY="368.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/btn-white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="255.0" fitWidth="451.0" layoutX="132.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/def-comp/k.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="121.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Fulano.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="btnNext" fx:id="btnNext" fitHeight="63.0" fitWidth="62.0" layoutX="624.0" layoutY="402.0" onMouseClicked="#goToNext" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../../img/right-arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="258.0" layoutY="12.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Componente D" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="402.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Ahora integraremos la matriz que representa " textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="425.0" styleClass="text" stylesheets="@../../fonts/font.css" text="la componente D del sistema, se procede a multiplicar" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="450.0" styleClass="text" stylesheets="@../../fonts/font.css" text="x*y para luego operar y obtener la nueva componente" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

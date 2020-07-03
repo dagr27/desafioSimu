@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="sPane" prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.Step6Controller">
+<AnchorPane id="AnchorPane" fx:id="sPane"  prefHeight="512.0" prefWidth="720.0" style="-fx-background-color: #004741;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.Step6Controller">
    <children>
       <ImageView fitHeight="139.0" fitWidth="486.0" layoutX="117.0" layoutY="368.0" pickOnBounds="true">
          <image>
@@ -18,7 +18,7 @@
             <Image url="@../../img/Fulano.gif" />
          </image>
       </ImageView>
-      <ImageView id="btnNext" fx:id="btnNext" fitHeight="63.0" fitWidth="62.0" layoutX="624.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="btnNext" onMouseClicked="#goToNext" fx:id="btnNext" fitHeight="63.0" fitWidth="62.0" layoutX="624.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../img/right-arrow.png" />
          </image>
