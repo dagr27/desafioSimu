@@ -28,7 +28,7 @@ import javafx.util.Duration;
  *
  * @author danie
  */
-public class AssemblyController implements Initializable {
+public class ConditionsController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -43,7 +43,7 @@ public class AssemblyController implements Initializable {
     @FXML
     AnchorPane sPane;    
     @FXML private void goToNext(javafx.scene.input.MouseEvent e) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/conditions.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/mef/views/end.fxml"));
         Scene scene = btnNext.getScene();
         
         AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/click.mp3").toExternalForm());
@@ -64,5 +64,3 @@ public class AssemblyController implements Initializable {
     }
     
 }
-    
-
