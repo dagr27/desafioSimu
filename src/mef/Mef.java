@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -36,7 +37,9 @@ public class Mef extends Application {
 
         AudioClip sound = new AudioClip(this.getClass().getResource("/mef/nature.mp3").toExternalForm());
         sound.play();
+        stage.setTitle("Proccessi");
         stage.setResizable(false);
+        stage.getIcons().add(new Image("/img/icon.png"));
         stage.show();
         
         //Fade Transition
