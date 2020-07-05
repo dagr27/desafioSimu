@@ -100,7 +100,7 @@ public class FXMLDomain2Controller implements Initializable {
 
         imgDomain.setImage(new Image(getClass().getResourceAsStream("/img/mesh/mesh-condition.jpeg")));
         lblBox1.setText("Genial, este es el mallado a utilizar, con sus condiciones de contorno");
-        lblBox2.setText("en las esquinas del cub, es interesante ver como en la figura se cruzan");
+        lblBox2.setText("en las esquinas del cubo, es interesante ver como en la figura se cruzan");
         lblBox3.setText("lineas de un borde a otro, esas lineas representan el Mallado");
     }
 

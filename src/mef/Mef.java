@@ -36,7 +36,7 @@ public class Mef extends Application {
 
         AudioClip sound = new AudioClip(this.getClass().getResource("/mef/nature.mp3").toExternalForm());
         sound.play();
-     
+        stage.setResizable(false);
         stage.show();
         
         //Fade Transition

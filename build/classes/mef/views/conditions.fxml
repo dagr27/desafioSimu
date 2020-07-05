@@ -13,7 +13,7 @@
             <Image url="@../../img/conditions/conditions.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="66.0" onMouseClicked="#goToNext"  fitWidth="66.0" layoutX="327.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+      <ImageView fitHeight="66.0" fx:id="btnNext" onMouseClicked="#goToNext"  fitWidth="66.0" layoutX="327.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
             <Image url="@../../img/right-arrow.png" />
          </image>

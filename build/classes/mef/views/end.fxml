@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="sPane" fx:id="home" prefHeight="512.0" prefWidth="720.0" styleClass="back" stylesheets="@../../img/back.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.controller.EndController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="282.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Shadow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="700.0" layoutX="10.0" layoutY="357.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/boxDialog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="160.0" layoutX="58.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/profe.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblText" layoutX="51.0" layoutY="386.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Esto ha sido todo por hoy, espero hayas disfrutado en el proceso">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblText1" layoutX="50.0" layoutY="415.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Puedes reiniciar el programa o bien cerrarlo">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblText11" layoutX="50.0" layoutY="443.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Para nosotros fue un placer ayudarte, feliz dia y a cuidarse del covid :D">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="129.0" layoutX="577.0" layoutY="274.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/boxDialog.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="btnRestart" onMouseClicked="#goToInit"  layoutX="591.0" layoutY="279.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Reiniciar">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="btnClose" onMouseClicked="#close" layoutX="591.0" layoutY="308.0" styleClass="text" stylesheets="@../../fonts/font.css" text="Cerrar">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
